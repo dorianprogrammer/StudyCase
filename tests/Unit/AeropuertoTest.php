@@ -2,17 +2,14 @@
 
 namespace Tests\Unit;
 
+use App\Models\Aeropuerto;
 use PHPUnit\Framework\TestCase;
 
 class AeropuertoTest extends TestCase
 {
-    /**
-     * A basic unit test example.
-     *
-     * @return void
-     */
-    public function test_example()
+    public function test_prueba_crear_aeropuerto()
     {
-        $this->assertTrue(true);
+        $AeropuertoEsperado = Aeropuerto::factory()->count(1)->make();
+        $this->assertTrue($AeropuertoEsperado != null);
     }
 }

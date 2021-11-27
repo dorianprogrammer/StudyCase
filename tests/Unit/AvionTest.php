@@ -2,19 +2,15 @@
 
 namespace Tests\Unit;
 
+use App\Models\Avion;
 use PHPUnit\Framework\TestCase;
 
 class AvionTest extends TestCase
 {
-    /**
-     * A basic unit test example.
-     *
-     * @return void
-     */
     public function test_prueba_crear_avion()
     {
-        $this->assertTrue(true);
+        $AvionEsperado = Avion::factory()->count(1)->make();
+        $this->assertTrue($AvionEsperado != null);
     }
-
-
 }
+
