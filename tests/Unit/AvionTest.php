@@ -11,8 +11,10 @@ class AvionTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_prueba_crear_avion()
     {
         $this->assertTrue(true);
     }
+
+
 }
