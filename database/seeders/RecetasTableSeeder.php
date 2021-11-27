@@ -19,7 +19,7 @@ class RecetasTableSeeder extends Seeder
         DB::table('recetas')->insert([
             'titulo' => 'Arroz con leche',
             'instrucciones' => '1. Echar agua, 2. iassasdad, . 3.dsfsdfsdf',
-            'id_instrucciones' => 1
+            'id_ingredientes' => 1
         ]);
     }
 }

@@ -15,7 +15,9 @@ class IngredientesTableSeeder extends Seeder
     public function run()
     {
         DB::table('ingredientes')->insert([
-            
+            'nombre' => 'Pimineta',
+            'porcion' => '1 cucharada',
+            'unidad_medida' => 'cuchara'
         ]);
     }
 }
