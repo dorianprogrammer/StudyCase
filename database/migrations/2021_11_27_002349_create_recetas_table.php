@@ -17,9 +17,9 @@ class CreateRecetasTable extends Migration
             $table->id();
             $table->string('titulo');
             $table->string('instrucciones');
-            $table->unsignedBigInteger('id_instrucciones');
+            $table->unsignedBigInteger('id_ingredientes');
             $table->timestamps();
-            $table->foreign('id_instrucciones')
+            $table->foreign('id_ingredientes')
                 ->references('id')
                 ->on('ingredientes')
                 ->onDelete('cascade')

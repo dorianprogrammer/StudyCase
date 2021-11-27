@@ -12,6 +12,6 @@ class Receta extends Model
     protected $fillable = [
         'titulo',
         'instrucciones',
-        'id_instrucciones'
+        'id_ingredientes'
     ];
 }
