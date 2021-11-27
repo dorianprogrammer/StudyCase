@@ -3,9 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\Ingrediente;
-use App\Models\Receta;
+use Faker\Core\Number;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class RecetasTableSeeder extends Seeder
 {
@@ -16,10 +17,12 @@ class RecetasTableSeeder extends Seeder
      */
     public function run()
     {
+        $idFound = Ingrediente::orderBy('id', 'DESC')->first('id');
+
         DB::table('recetas')->insert([
-            'titulo' => 'Arroz con leche',
-            'instrucciones' => '1. Echar agua, 2. iassasdad, . 3.dsfsdfsdf',
-            'id_ingredientes' => 1
+            'titulo' => Str::random(10),
+            'instrucciones' => Str::random(20),
+            'id_ingredientes' => $idFound['id'],
         ]);
     }
 }

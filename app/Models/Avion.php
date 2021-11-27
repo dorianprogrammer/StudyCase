@@ -10,7 +10,6 @@ class Avion extends Model
     use HasFactory;
 
     protected $fillable = [
-        'placa',
-        
+        'placa', 
     ];
 }
