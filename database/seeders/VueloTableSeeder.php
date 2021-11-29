@@ -18,8 +18,6 @@ class VueloTableSeeder extends Seeder
             'numVuelo' => 1,
             'idAvion' => 1,
             'idAeropuerto' => 1
-
-
         ]);
     }
 }
