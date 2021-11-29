@@ -16,6 +16,7 @@ class RecetaFactory extends Factory
     {
         $idFound = Ingrediente::orderBy('id', 'DESC')->first('id');
         
+        
         return [
             'titulo' => $this->faker->title(),
             'instrucciones' => $this->faker->paragraph(),
